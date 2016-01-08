@@ -7,7 +7,7 @@
       "status": "Status"
     }
   },
-  "api": {
+  "rest": {
     "title": "Webhooks REST API",
     "section": {
       "authentication": "Authentication",
