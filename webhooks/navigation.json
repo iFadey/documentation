@@ -1,0 +1,51 @@
+{
+  "introduction": {
+    "title": "Webhooks",
+    "section": {
+      "overview": "Overview",
+      "event-types": "Event Types",
+      "status": "Status"
+    }
+  },
+  "api": {
+    "title": "Webhooks REST API",
+    "section": {
+      "authentication": "Authentication",
+      "create": "Create a Webhook",
+      "verify": "Verify the Webhook",
+      "list": "List Webhooks",
+      "get": "Get a Webhook by ID",
+      "activate": "Activate a Webhook",
+      "deactivate": "Deactivate a Webhook",
+      "delete": "Delete a Webhook"
+    }
+  },
+  "requests": {
+    "title": "Webhooks Requests",
+    "section": {
+      "overview": "Overview",
+      "request-headers": "Request Headers",
+      "validating-payload": "Validating Payload Integrity",
+      "responding": "Responding to a Webhook"
+    }
+  },
+  "payloads": {
+    "title": "Event Payloads",
+    "section": {
+      "message-sent": "`message.sent`",
+      "message-delivered": "`message.delivered`",
+      "message-read": "`message.read`",
+      "message-deleted": "`message.deleted`",
+      "conversation-created": "`conversation.created`",
+      "conversation-updated-participants": "`conversation.updated.participants`",
+      "conversation-updated-metadata": "`conversation.updated.metadata`",
+      "conversation-deleted": "`conversation.deleted`"
+    }
+  },
+  "support": {
+    "title": "Support",
+    "section": {
+      "support": "Resources"
+    }
+  }
+}
