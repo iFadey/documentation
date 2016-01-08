@@ -1,4 +1,4 @@
-# Layer Webhooks Change Log
+# Webhooks Change Log
 
 ## January 7, 2016
 

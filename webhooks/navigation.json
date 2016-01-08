@@ -1,6 +1,6 @@
 {
   "introduction": {
-    "title": "Webhooks",
+    "title": "Introduction",
     "section": {
       "overview": "Overview",
       "event-types": "Event Types",
@@ -8,7 +8,7 @@
     }
   },
   "rest": {
-    "title": "Webhooks REST API",
+    "title": "REST API",
     "section": {
       "authentication": "Authentication",
       "create": "Create a Webhook",
@@ -21,7 +21,7 @@
     }
   },
   "requests": {
-    "title": "Webhooks Requests",
+    "title": "Requests",
     "section": {
       "overview": "Overview",
       "request-headers": "Request Headers",
@@ -40,6 +40,12 @@
       "conversation-updated-participants": "`conversation.updated.participants`",
       "conversation-updated-metadata": "`conversation.updated.metadata`",
       "conversation-deleted": "`conversation.deleted`"
+    }
+  },
+  "changelog": {
+    "title": "Changelog",
+    "section": {
+      "changelog": "Changelog"
     }
   },
   "support": {
