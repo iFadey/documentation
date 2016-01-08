@@ -34,6 +34,12 @@
       "recovery": "Recovery"
     }
   },
+  "changelog": {
+    "title": "Changelog",
+    "section": {
+      "changelog": "Changelog"
+    }
+  },
   "support": {
     "title": "Support",
     "section": {

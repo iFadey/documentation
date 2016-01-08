@@ -1,4 +1,4 @@
-# Layer Platform API Change Log
+# Platform API Change Log
 
 ## December 29, 2015
 
