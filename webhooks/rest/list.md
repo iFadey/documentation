@@ -1,9 +1,13 @@
 # List Webhooks
 
-```
-GET https://api.layer.com/apps/{app_id}/webhooks
+You can request a list of all of your webhooks from the API:
 
- > 200 OK 
+```request
+GET https://api.layer.com/apps/:app_id/webhooks
+```
+### Response `200 (OK)`
+
+```json
 [
   {
     "id": "layer:///apps/082d4684-0992-11e5-a6c0-1697f925ec7b/webhooks/f5ef2b54-0991-11e5-a6c0-1697f925ec7b",

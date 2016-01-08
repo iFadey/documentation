@@ -1,11 +1,17 @@
 # Authentication
 
-Authentication for the Webhooks API is based on a token generated from within the developer dashboard (same token as the Platform API).  This token can be generated with an expiry period (not currently supported, planned feature) and/or revoked.
+Authentication for the Webhooks API will be based on a `TOKEN` generated from within the [Developer Dashboard](https://developer.layer.com/projects/keys) within the *Platform API tokens* section. The token can be revoked at any time by deleting it from the developer dashboard.
 
-The token needs to be included in the `Authorization` header of each HTTP request as follows:
-
+The Authorization header of each HTTP request will be the word "Bearer" followed by your token:
+```text
+Authorization: Bearer TOKEN
 ```
-Authorization: Bearer x32pYli9DCBByPUzz3CMLU9jDTYdiAacNiJrMIkdp4lTf6sb
+If the token is missing or invalid, the server will respond with:
+
+```text
+401 (Unauthorized)
 ```
 
-If the token is missing or invalid, the server will respond with `401 Unauthorized`.
+## Platform API Token Security
+
+The Platform API tokens provide administrator level access to your app’s resources and as such should be kept secure.

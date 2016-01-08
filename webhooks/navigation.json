@@ -10,6 +10,7 @@
   "rest": {
     "title": "REST API",
     "section": {
+      "introduction": "Introduction",
       "authentication": "Authentication",
       "create": "Create a Webhook",
       "verify": "Verify the Webhook",
@@ -26,20 +27,21 @@
       "overview": "Overview",
       "request-headers": "Request Headers",
       "validating-payload": "Validating Payload Integrity",
-      "responding": "Responding to a Webhook"
+      "responding": "Responding to a Webhook",
+      "request-fields": "Request Fields"
     }
   },
   "payloads": {
     "title": "Event Payloads",
     "section": {
-      "message-sent": "`message.sent`",
-      "message-delivered": "`message.delivered`",
-      "message-read": "`message.read`",
-      "message-deleted": "`message.deleted`",
-      "conversation-created": "`conversation.created`",
-      "conversation-updated-participants": "`conversation.updated.participants`",
-      "conversation-updated-metadata": "`conversation.updated.metadata`",
-      "conversation-deleted": "`conversation.deleted`"
+      "message-sent": "Message Sent",
+      "message-delivered": "Message Delivered",
+      "message-read": "Message Read",
+      "message-deleted": "Message Deleted",
+      "conversation-created": "Conversation Created",
+      "conversation-updated-participants": "Conversation Participant Change",
+      "conversation-updated-metadata": "Conversation Metadata Change",
+      "conversation-deleted": "Conversation Deleted"
     }
   },
   "changelog": {

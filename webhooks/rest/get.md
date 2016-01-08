@@ -1,9 +1,15 @@
 # Get a Webhook by ID
 
-```
-GET https://api.layer.com/apps/{app_id}/webhooks/{webhook_id}
+You can get the details and status of a single webhook by requesting it from the API:
 
-> 200 OK {
+```request
+GET https://api.layer.com/apps/:app_id/webhooks/:webhook_id
+```
+
+### Response `200 (OK)`
+
+```json
+{
     "id": "layer:///apps/082d4684-0992-11e5-a6c0-1697f925ec7b/webhooks/f5ef2b54-0991-11e5-a6c0-1697f925ec7b",
 	"url": "https://api.layer.com/082d4684-0992-11e5-a6c0-1697f925ec7b/webhooks/f5ef2b54-0991-11e5-a6c0-1697f925ec7b"
     "target_url": "https://client.example.com/layeruser/foo",
@@ -17,5 +23,5 @@ GET https://api.layer.com/apps/{app_id}/webhooks/{webhook_id}
 		"key1" : "value1",
 		"key2" : "value2"
 	}
-  }
+}
 ```

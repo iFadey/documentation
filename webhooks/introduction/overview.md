@@ -4,5 +4,9 @@ Webhooks allow you to develop integrations which subscribe to events within your
 
 * Add context to conversations: respond to messages mentioning keywords
 * Notify another user when they are @mentioned
-* Send a welcome message when a user registers (build a great onboarding experience)
 * Integrate a third-party service (Uber API, Weather Underground, etc) into conversations based on context
+
+
+### Requirements
+
+You must have a webserver able to receive HTTP/1.1 requests and able to support keepalive requests.
