@@ -1,6 +1,6 @@
 # Conversation Created
 
-A `conversation.sent` event is sent when a new Conversation is created.  This will be triggered for Conversations created by both users and via the Platform API.
+A `conversation.created` event is sent when a new Conversation is created.  This will be triggered for Conversations created by both users and via the Platform API.
 
 ```json
 {

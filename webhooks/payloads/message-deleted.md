@@ -1,6 +1,6 @@
 # Message Deleted
 
-A `message.deleted` event is sent when a Message is globally deleted.  Note that there are other forms of deletion; these do not at this time trigger a websocket event.
+A `message.deleted` event is sent when a Message is globally deleted.  This will be triggered for Messages deleted by both users and via the Platform API.  Note that there are other forms of deletion; these do not at this time trigger a websocket event.
 
 ```json
 {

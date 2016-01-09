@@ -1,8 +1,6 @@
 # Event Types
 
-When configuring a webhook, you choose the events for which you would like to receive payloads by subscribing to the specific events you intend to handle.
-
-Each event type corresponds to a specific action that can occur within your Layer application. The current set of available event types are:
+When configuring a webhook, you subscribe to the specific events that your service needs.  Each event type corresponds to a specific action that can occur within your Layer application. The current set of available event types are:
 
 | Event | Triggers When |
 |--------|--------------|

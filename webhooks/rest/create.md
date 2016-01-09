@@ -2,10 +2,10 @@
 
 | Name    | Type   | Description |
 |---------|:------:|-------------|
-| `target_url`    | string   | Destination URL for the webhook (must be HTTPS) |
-| `event_types` | array of strings | Types of [events](#introduction/event-types) that will cause this webhook to be triggered |
-| `secret` | string  | String that’s passed with the HTTP requests as a `layer-webhook-signature` header. The value of this header is computed as the HMAC hex digest of the body, using the secret as the key. |
-| `target_config`   | dictionary   | A free form dictionary of supplemental data specific to the webhook |
+| **target_url**    | string   | Destination URL for the webhook (must be HTTPS) |
+| **event_types** | string[] | Types of [events](#introduction/event-types) that will cause this webhook to be triggered |
+| **secret** | string  | String you provide which will be included in each webhook event to allow your server to verify the authenticity of the event. |
+| **target_config**   | dictionary   | A free form dictionary of supplemental data specific to the webhook |
 
 ```request
 POST https://api.layer.com/apps/:app_id/webhooks
@@ -13,7 +13,7 @@ POST https://api.layer.com/apps/:app_id/webhooks
 
 ```json
 {
-    "target_url": "https://client.example.com/layeruser/foo",
+    "target_url": "https://mydomain.com/my-webhook-endpoint",
     "event_types": [
       "user.registered",
       "conversation.created"
@@ -31,8 +31,8 @@ POST https://api.layer.com/apps/:app_id/webhooks
 ```json
 {
     "id": "layer:///apps/082d4684-0992-11e5-a6c0-1697f925ec7b/webhooks/f5ef2b54-0991-11e5-a6c0-1697f925ec7b",
-	"url": "https://api.layer.com/082d4684-0992-11e5-a6c0-1697f925ec7b/webhooks/f5ef2b54-0991-11e5-a6c0-1697f925ec7b"
-    "target_url": "https://client.example.com/layeruser/foo",
+	"url": "https://api.layer.com/apps/082d4684-0992-11e5-a6c0-1697f925ec7b/webhooks/f5ef2b54-0991-11e5-a6c0-1697f925ec7b"
+    "target_url": "https://mydomain.com/my-webhook-endpoint",
     "event_types": [
       "user.registered",
       "conversation.created"
@@ -50,7 +50,6 @@ Note that this results in an `unverified` webhook; the webhook must be verified 
 
 ### Secrets
 
-The `secret` specified when a Webhook is created is used to compute a [Hash-based Message Authentication Code](http://en.wikipedia.org/wiki/HMAC) (or HMAC) over the serialized request body before it is sent. The HMAC is delivered with the request via the `layer-webhook-signature` HTTP header.
+The `secret` you provide helps to secure your webserver's endpoint from unauthorized access.  Generate an arbitrary string, and provide it to Layer when creating the webhook.  That secret can then be used for validating all data sent via the webhook to your server.  This is explained in more detail in [Validating Payload](#requests#validating-payload).
 
-When integrating a Layer Webhook with your application, it is recommended that you verify the integrity of the payload by validating the signature given in the `layer-webhook-signature` header. You can do so by feeding the secret and complete request body to a crypto library (such as OpenSSL) that is capable of computing an HMAC digest. If the request is valid and the body has not been tampered with, the computed signature will match the header value exactly.
-
+Please do not use an easily guessed string such as "secret", nor should your secret show up in public spaces such as a public github repo.

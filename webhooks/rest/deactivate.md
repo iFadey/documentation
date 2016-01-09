@@ -11,8 +11,8 @@ POST https://api.layer.com/apps/:app_id/webhooks/:webhook_id/deactivate
 ```json
 {
     "id": "layer:///apps/082d4684-0992-11e5-a6c0-1697f925ec7b/webhooks/f5ef2b54-0991-11e5-a6c0-1697f925ec7b",
-	"url": "https://api.layer.com/082d4684-0992-11e5-a6c0-1697f925ec7b/webhooks/f5ef2b54-0991-11e5-a6c0-1697f925ec7b"
-    "target_url": "https://client.example.com/layeruser/foo",
+	"url": "https://api.layer.com/apps/082d4684-0992-11e5-a6c0-1697f925ec7b/webhooks/f5ef2b54-0991-11e5-a6c0-1697f925ec7b"
+    "target_url": "https://mydomain.com/my-webhook-endpoint",
     "event_types": [
       "user.registered",
       "conversation.created"

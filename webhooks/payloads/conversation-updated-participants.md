@@ -1,6 +1,6 @@
 # Conversation Participant Change
 
-A `conversation.updated.participants` event is sent whenever there is a change to any Conversation's pariticipant list.  The event is triggered for change made by users and by the Platform API.
+A `conversation.updated.participants` event is sent whenever there is a change to any Conversation's pariticipant list.  The event is triggered for changes made by users and by the Platform API.
 
 ```json
 {
