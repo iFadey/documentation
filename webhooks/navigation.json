@@ -12,7 +12,7 @@
     "section": {
       "introduction": "Introduction",
       "authentication": "Authentication",
-      "create": "Create a Webhook",
+      "create": "Register a Webhook",
       "verify": "Verify the Webhook",
       "list": "List Webhooks",
       "get": "Get a Webhook by ID",

@@ -1,4 +1,4 @@
-# Create a Webhook
+# Register a Webhook
 
 | Name    | Type   | Description |
 |---------|:------:|-------------|
