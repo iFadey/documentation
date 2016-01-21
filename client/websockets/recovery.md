@@ -56,10 +56,10 @@ function myErrorHandler(err) {
             // How to implement this is described in the next section
             replayFrom(lastEvent.timestamp);
        });
-       mysocket.addEventHandler("error", myErrorHandler");
+       mysocket.addEventHandler("error", myErrorHandler);
     }, 15000);
 }
-mysocket.addEventHandler("error", myErrorHandler");
+mysocket.addEventHandler("error", myErrorHandler);
 ```
 
 Note that if you do NOT have the ping request firing periodically, you may go hours without any Change Packets from the server, nor will there be any clue to your user that they are no longer connected to the server.
